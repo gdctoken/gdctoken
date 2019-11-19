@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "Global Digital Contents Token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "migrate:crowdsale": "truffle mirgrate -f 2 --to 2",
+    "migrate:token": "truffle migrate -f 3 --to 3",
+    "migrate:clone": "truffle migrate -f 4",
+    "test": "truffle test",
+    "clean": "rimraf ./build"
+  },
+  "dependencies": {
+    "@openzeppelin/test-helpers": "^0.5.3",
+    "args": "^3.0.8",
+    "babel-eslint": "^8.0.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bignumber.js": "^4.1.0",
+    "bs58": "^4.0.1",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "commander": "^2.12.2",
+    "csv-parse": "^4.6.5",
+    "dotenv": "^4.0.0",
+    "eslint": "^4.5.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "ethereumjs-tx": "^1.3.3",
+    "ethereumjs-util": "^5.1.4",
+    "moment": "^2.19.2",
+    "sprintf-js": "^1.1.1",
+    "truffle": "^5.0.42",
+    "truffle-artifactor": "^3.0.0",
+    "truffle-privatekey-provider": "^1.3.0",
+    "web3-provider-engine": "^15.0.4"
+  },
+  "devDependencies": {
+    "chai-bignumber": "^2.0.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "rimraf": "^2.6.2"
+  }
+}
